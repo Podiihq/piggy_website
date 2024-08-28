@@ -36,7 +36,7 @@ const HomePage = () => {
                     <p className='uppercase text-xl'>Piggy Points</p>
                 </div>
                 <div>
-                    <button class="relative px-8 py-3 text-white font-bold rounded-full bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] hover:from-[#BF8D10] hover:to-[#EAC870]">
+                    <button class="relative px-8 py-3 text-white font-bold rounded-full bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] hover:from-[#BF8D10] hover:to-[#EAC870] transform hover:scale-105 transition-all duration-300">
                         <span class="absolute inset-0 bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] opacity-75 blur-sm rounded-full"></span>
                         <span class="relative z-10">Join Waiting List</span>
                     </button>
@@ -51,14 +51,14 @@ const HomePage = () => {
                     </p>
                     <p className='helvetica-regular text-[16px] leading-[24px]'>Make good habits fun with our point-based system that rewards kids for completing tasks and reaching their goals. Every achievement earns your child points that can be redeemed for games, toys and more!</p>
                     <p className='text-[16px] leading-[24px] uppercase mt-8'>Available Soon On:</p>
-                    <div className='flex gap-6'>
-                        <button class="relative px-8  text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
+                    <div className='flex gap-3'>
+                        <button class="relative px-8 text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
                             <span class="absolute inset-0 bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] opacity-75 blur-sm rounded-full"></span>
-                            <img src={GoogleIcon} alt="" className='relative z-20' />
+                            <img src={GoogleIcon} alt="" className='relative z-20 w-32' />
                         </button>
                         <button class="relative px-8 py-3.5 text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
                             <span class="absolute inset-0 bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] opacity-75 blur-sm rounded-full"></span>
-                            <img src={AppleIcon} alt="" className='relative z-20' />
+                            <img src={AppleIcon} alt="" className='relative z-20 w-28' />
                         </button>
                     </div>
                 </div>
