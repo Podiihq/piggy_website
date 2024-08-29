@@ -7,6 +7,9 @@ import AppleIcon from "../../assets/images/icons/AppleIcon.svg"
 import Hero from "../../assets/images/illustrations/heroImage.png"
 import CardsComponent from './components/cards/CardsComponent';
 
+import Bento1 from "../../assets/images/illustrations/Bento1.png"
+import Bento2 from "../../assets/images/illustrations/Bento2.png"
+
 const HomePage = () => {
     // useEffect(() => {
     //     window.scrollTo(0, 0);
@@ -77,8 +80,41 @@ const HomePage = () => {
                 </div>
                 <CardsComponent />
             </section>
-            <section className='py-32'>
+            <section className='pb-32'>
+                <p className='text-[60px] helvetica-bold leading-[60px] w-2/3'>
+                    <span className='text-[#A6A6A6] helvetica-bold'> Our Main </span> Features
+                </p>
+                <div className='mt-8'>
+                    <div className='grid grid-cols-5 gap-[10px]'>
+                        <div className='col-span-3'>
+                            <div className='flex gap-2 bg-[#f5f5f5] rounded-2xl px-6 pt-6 h-[400px]'>
+                                <div className=''>
+                                    <h2 className='text-[48px] leading-[48px]'>Set Good Habits</h2>
+                                    <p className='text-[16px] leading-[20px] mt-4 helvetica-regular'>Our platform is dedicated to fostering a supportive environment where your child can thrive and grow through encouragement and recognition of their accomplishments.</p>
+                                </div>
+                                <img src={Bento1} alt="" className='w-1/2 object-cover' />
+                            </div>
+                            <div className='mt-[10px] grid grid-cols-2 gap-[10px]'>
+                                <div className='bg-[#f5f5f5] p-6 rounded-2xl'>
+                                    <h2 className='text-[32px] leading-[32px]'>Review completed task</h2>
+                                    <p className='text-[16px] leading-[20px] mt-4 helvetica-regular'>Stay connected to your child's development and progress, no matter your location. Review photo evidence of completed tasks and award well-deserved points.</p>
+                                </div>
+                                <div className='bg-[#f5f5f5] p-6 rounded-2xl'>
+                                    <h2 className='text-[32px] leading-[32px]'>Buy and redeem points</h2>
+                                    <p className='text-[16px] leading-[20px] mt-4 helvetica-regular'>If the reward is monetary - put your money where our mouth is, set aside an amount equivalent to points allocated by buying points. The money is still yours and is redeemable for cash or the reward once the child has accumulated the points and unlocked the reward.</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div className='bg-[#f5f5f5] rounded-2xl px-6 pt-6 col-span-2 flex flex-col'>
+                            <div className='mb-auto'>
+                                <h2 className='text-[48px] leading-[48px]'>Reward Good Behavior</h2>
+                                <p className='text-[16px] leading-[20px] mt-4 helvetica-regular'>We've designed PiggyPoints to make tracking progress and earning rewards effortless. Features like (tracking, point adjustments) empower you to actively support your child's development and celebrate achievements together</p>
+                            </div>
+                            <img src={Bento2} alt="" className='w-full' />
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     )
