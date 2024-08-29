@@ -87,7 +87,7 @@ const HomePage = () => {
                 <div className='mt-8'>
                     <div className='grid grid-cols-5 gap-[10px]'>
                         <div className='col-span-3'>
-                            <div className='flex gap-2 bg-[#f5f5f5] rounded-2xl px-6 pt-6 h-[400px]'>
+                            <div className='flex gap-2 bg-[#f5f5f5] rounded-[30px] px-6 pt-6 h-[400px]'>
                                 <div className=''>
                                     <h2 className='text-[48px] leading-[48px]'>Set Good Habits</h2>
                                     <p className='text-[16px] leading-[20px] mt-4 helvetica-regular'>Our platform is dedicated to fostering a supportive environment where your child can thrive and grow through encouragement and recognition of their accomplishments.</p>
@@ -95,18 +95,18 @@ const HomePage = () => {
                                 <img src={Bento1} alt="" className='w-1/2 object-cover' />
                             </div>
                             <div className='mt-[10px] grid grid-cols-2 gap-[10px]'>
-                                <div className='bg-[#f5f5f5] p-6 rounded-2xl'>
+                                <div className='bg-[#f5f5f5] p-6 rounded-[30px]'>
                                     <h2 className='text-[32px] leading-[32px]'>Review completed task</h2>
                                     <p className='text-[16px] leading-[20px] mt-4 helvetica-regular'>Stay connected to your child's development and progress, no matter your location. Review photo evidence of completed tasks and award well-deserved points.</p>
                                 </div>
-                                <div className='bg-[#f5f5f5] p-6 rounded-2xl'>
+                                <div className='bg-[#f5f5f5] p-6 rounded-[30px]'>
                                     <h2 className='text-[32px] leading-[32px]'>Buy and redeem points</h2>
                                     <p className='text-[16px] leading-[20px] mt-4 helvetica-regular'>If the reward is monetary - put your money where our mouth is, set aside an amount equivalent to points allocated by buying points. The money is still yours and is redeemable for cash or the reward once the child has accumulated the points and unlocked the reward.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='bg-[#f5f5f5] rounded-2xl px-6 pt-6 col-span-2 flex flex-col'>
+                        <div className='bg-[#f5f5f5] rounded-[30px] px-6 pt-6 col-span-2 flex flex-col'>
                             <div className='mb-auto'>
                                 <h2 className='text-[48px] leading-[48px]'>Reward Good Behavior</h2>
                                 <p className='text-[16px] leading-[20px] mt-4 helvetica-regular'>We've designed PiggyPoints to make tracking progress and earning rewards effortless. Features like (tracking, point adjustments) empower you to actively support your child's development and celebrate achievements together</p>
@@ -114,8 +114,42 @@ const HomePage = () => {
                             <img src={Bento2} alt="" className='w-full' />
                         </div>
                     </div>
+                    <div className='mt-8'>
+                        <p className='text-[16px] leading-[24px] uppercase mt-8 text-center'>Available Soon On:</p>
+                        <div className='flex gap-3 justify-center mt-4'>
+                            <button class="relative px-8 text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
+                                <span class="absolute inset-0 bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] opacity-75 blur-sm rounded-full"></span>
+                                <img src={GoogleIcon} alt="" className='relative z-20 w-32' />
+                            </button>
+                            <button class="relative px-8 py-3.5 text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
+                                <span class="absolute inset-0 bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] opacity-75 blur-sm rounded-full"></span>
+                                <img src={AppleIcon} alt="" className='relative z-20 w-28' />
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
+            <section className='py-32'>
+                <div className='px-6 py-16 bg-[#f5f5f5] rounded-[30px]'>
+                    <div>
+                        <img src={Logo} alt="" className='mx-auto w-28' />
+                        <p className='text-[60px] helvetica-bold leading-[60px] text-center w-2/3 mx-auto'>
+                            <span className='text-[#A6A6A6] helvetica-bold'> Help Your </span> Child  {" "}
+                            <span className='text-[#A6A6A6] helvetica-bold'> Build </span> Positive
+                            <span className='text-[#A6A6A6] helvetica-bold'> Habits </span>
+                        </p>
+                        <div className='flex justify-center pt-10'>
+                            <button class="relative px-8 py-3 text-white font-bold rounded-full bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] hover:from-[#BF8D10] hover:to-[#EAC870] transform hover:scale-105 transition-all duration-300">
+                                <span class="absolute inset-0 bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] opacity-75 blur-sm rounded-full"></span>
+                                <span class="relative z-10">Join Waiting List</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <p className='text-center mb-8 text-sm helvetica-regular'>©️ Copyright Piggy Points App 2024 | All Rights Reserved</p>
+            </footer>
         </div>
     )
 }
