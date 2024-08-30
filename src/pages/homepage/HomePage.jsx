@@ -81,7 +81,7 @@ const HomePage = () => {
                     <img src={Video} alt="" className='w-full h-full object-cover rounded-[30px]' />
                 </div>
             </section>
-            <section className=' py-16 lg:py-32'>
+            <section className='py-16 lg:py-32'>
                 <div>
                     <p className='uppercase text-center'>Why use PiggyPoints App:</p>
                     <p className='text-[50px] leading-[55px] lg:text-[60px] helvetica-bold lg:leading-[60px] text-center lg:w-2/3 mx-auto'>
