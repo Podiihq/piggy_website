@@ -50,7 +50,7 @@ const HomePage = () => {
             </div>
             <section>
                 <div className='grid lg:grid-cols-2 items-center mt-20 lg:mt-32'>
-                    <div className='flex flex-col gap-2'>
+                    <div className='flex flex-col gap-2 md:w-4/5 lg:w-full mx-auto'>
                         <p className='uppercase text-center lg:text-left'>Mobile App</p>
                         <p className='text-[50px] leading-[55px] text-center lg:text-left lg:text-[60px] helvetica-bold lg:leading-[60px]'>
                             <span className='text-[#A6A6A6] helvetica-bold'> Making </span> Everyday Habits {" "}
