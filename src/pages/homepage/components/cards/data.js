@@ -14,7 +14,7 @@ export const projects = [
         src: Image2,
     },
     {
-        title: "Positive Reinforcement",
+        title: "Lorem Ipsum",
         description: "Our platform is dedicated to fostering a supportive environment where your child can thrive and grow through encouragement and recognition of their accomplishments.",
         src: Image1,
     },
