@@ -5,17 +5,17 @@ import Image2 from "../../../../assets/images/illustrations/Reason2.png"
 export const projects = [
     {
         title: "Positive Reinforcement",
-        description: "Our platform is dedicated to fostering a supportive environment where your child can thrive and grow through encouragement and recognition of their accomplishments.",
+        description: "We help you celebrate everyday achievements with your child. By rewarding them with points and rewards, we boost your child's confidence, affirming their efforts and encouraging them to strive for more.",
         src: Image1,
     },
     {
-        title: "Smooth Experience",
-        description: "We've designed PiggyPoints to make tracking progress and earning rewards effortless. Features like (tracking, point adjustments) empower you to actively support your child's development and celebrate achievements together",
+        title: "Habits that Stick",
+        description: "Transform daily mundane tasks into engaging routines that stick. Our reward system makes building positive habits fun, helping children develop valuable lifelong behaviors.",
         src: Image2,
     },
     {
-        title: "Lorem Ipsum",
-        description: "Our platform is dedicated to fostering a supportive environment where your child can thrive and grow through encouragement and recognition of their accomplishments.",
+        title: "Delayed Gratification",
+        description: "We help you teach your kids the value of waiting by letting them choose between an immediate reward or accumulating points to unlock a bigger reward. ",
         src: Image1,
     },
 

@@ -111,13 +111,13 @@ const HomePage = () => {
 
 
             <section className='pb-32 max-w-screen-lg mx-auto'>
-                <p className='text-[50px] leading-[55px] lg:text-[60px] helvetica-bold lg:leading-[60px] lg:w-2/3'>
+                <p className='text-[32px] leading-[32px] lg:text-[60px] helvetica-bold lg:leading-[60px] lg:w-2/3'>
                     <span className='text-[#A6A6A6] helvetica-bold'> Our Main </span> Features
                 </p>
                 <div className='mt-8'>
                     <div className='grid lg:grid-cols-5 gap-[10px]'>
                         <div className='lg:col-span-3'>
-                            <div className='flex gap-2 bg-[#f9f9f9] rounded-[30px] px-6 pt-6 lg:h-[400px] pb-6 lg:pb-0'>
+                            <div className='flex gap-2 bg-[#f9f9f9] rounded-[30px] px-10 pt-10 lg:h-[400px] pb-6 lg:pb-0 border'>
                                 <div className=''>
                                     <h2 className='text-[32px] leading-[32px lg:text-[48px] lg:leading-[48px]'>Set Good Habits</h2>
                                     <p className='text-[16px] leading-[20px] mt-4 helvetica-regular'>Our platform is dedicated to fostering a supportive environment where your child can thrive and grow through encouragement and recognition of their accomplishments.</p>
@@ -125,18 +125,18 @@ const HomePage = () => {
                                 <img src={Bento1} alt="" className='w-1/2 object-cover hidden lg:block' />
                             </div>
                             <div className='mt-[10px] grid lg:grid-cols-2 gap-[10px]'>
-                                <div className='bg-[#f9f9f9] p-6 rounded-[30px]'>
-                                    <h2 className='text-[32px] leading-[32px]'>Review completed task</h2>
+                                <div className='bg-[#f9f9f9] p-10 rounded-[30px] border'>
+                                    <h2 className='text-[32px] leading-[32px]'>Review Completed Task</h2>
                                     <p className='text-[16px] leading-[20px] mt-4 helvetica-regular'>Stay connected to your child's development and progress, no matter your location. Review photo evidence of completed tasks and award well-deserved points.</p>
                                 </div>
-                                <div className='bg-[#f9f9f9] p-6 rounded-[30px]'>
-                                    <h2 className='text-[32px] leading-[32px]'>Buy and redeem points</h2>
+                                <div className='bg-[#f9f9f9] p-10 rounded-[30px] border'>
+                                    <h2 className='text-[32px] leading-[32px]'>Buy and Redeem Points</h2>
                                     <p className='text-[16px] leading-[20px] mt-4 helvetica-regular'>If the reward is monetary - put your money where our mouth is, set aside an amount equivalent to points allocated by buying points. The money is still yours and is redeemable for cash or the reward once the child has accumulated the points and unlocked the reward.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='bg-[#f9f9f9] rounded-[30px] px-6 pt-6 lg:col-span-2 flex flex-col pb-6 lg:pb-0'>
+                        <div className='bg-[#f9f9f9] rounded-[30px] px-10 pt-10 lg:col-span-2 flex flex-col pb-6 lg:pb-0 border'>
                             <div className='mb-auto'>
                                 <h2 className='text-[32px] leading-[32px] lg:text-[48px] lg:leading-[48px]'>Reward Good Behavior</h2>
                                 <p className='text-[16px] leading-[20px] mt-4 helvetica-regular'>We've designed PiggyPoints to make tracking progress and earning rewards effortless. Features like (tracking, point adjustments) empower you to actively support your child's development and celebrate achievements together</p>
