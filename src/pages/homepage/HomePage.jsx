@@ -1,5 +1,5 @@
 import Lenis from 'lenis';
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Logo from "../../assets/images/Logo.svg"
 import GoogleIcon from "../../assets/images/icons/googleIcon.svg"
@@ -25,6 +25,7 @@ import FunIcon9 from "../../assets/images/fun/Vector-1.png"
 import FunIcon10 from "../../assets/images/fun/Vector.png"
 import { MouseImageTrail } from './components/MouseTrail';
 import { FiMousePointer } from "react-icons/fi";
+import { ContactModal } from '../contactpage/ContactForm';
 
 const HomePage = () => {
     // useEffect(() => {
@@ -48,19 +49,20 @@ const HomePage = () => {
     }, []);
 
 
-
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div className='text-[#171717] px-4'>
+            <ContactModal isOpen={isOpen} setIsOpen={setIsOpen} />
             <div className='py-4 flex justify-between items-center max-w-screen-lg mx-auto'>
                 <div className='flex items-center gap-1'>
                     <img src={Logo} alt="" />
                     <p className='text-xl helvetica-bold text-[#171717]'>Piggy Points</p>
                 </div>
                 <div>
-                    <button class="relative px-6 py-2.5 lg:px-8 lg:py-3.5 text-white font-bold rounded-full bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] hover:from-[#BF8D10] hover:to-[#EAC870] transform hover:scale-105 transition-all duration-300">
-                        <span class="absolute inset-0 bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] opacity-75 blur-sm rounded-full"></span>
-                        <span class="relative z-10">Join Waiting List</span>
+                    <button onClick={() => setIsOpen(true)} class="relative px-6 py-2.5 lg:px-8 lg:py-3.5 text-white font-bold rounded-full bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] hover:from-[#BF8D10] hover:to-[#EAC870] transform hover:scale-105 transition-all duration-300">
+                        <span className="absolute inset-0 bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] opacity-75 blur-sm rounded-full"></span>
+                        <span className="relative z-10">Join Waiting List</span>
                     </button>
                 </div>
             </div>
@@ -75,12 +77,12 @@ const HomePage = () => {
                         <p className='helvetica-regular text-[16px] leading-[24px] text-center lg:text-left'>Make good habits fun with our point-based system that rewards kids for completing tasks and reaching their goals. Every achievement earns your child points that can be redeemed for games, toys and more!</p>
                         <p className='text-[16px] leading-[24px] uppercase mt-8 text-center lg:text-left'>Available Soon On:</p>
                         <div className='flex gap-3 justify-center lg:justify-start'>
-                            <button class="relative px-6 py-2.5 lg:px-8 lg:py-3.5 text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
-                                <span class="absolute inset-0 bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] opacity-75 blur-sm rounded-full"></span>
+                            <button className="relative px-6 py-2.5 lg:px-8 lg:py-3.5 text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
+                                <span className="absolute inset-0 bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] opacity-75 blur-sm rounded-full"></span>
                                 <img src={GoogleIcon} alt="" className='relative z-20 w-32' />
                             </button>
-                            <button class="relative px-6 py-2.5 lg:px-8 lg:py-3.5 text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
-                                <span class="absolute inset-0 bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] opacity-75 blur-sm rounded-full"></span>
+                            <button className="relative px-6 py-2.5 lg:px-8 lg:py-3.5 text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
+                                <span className="absolute inset-0 bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] opacity-75 blur-sm rounded-full"></span>
                                 <img src={AppleIcon} alt="" className='relative z-20 w-28' />
                             </button>
                         </div>
@@ -147,12 +149,12 @@ const HomePage = () => {
                     <div className='mt-8'>
                         <p className='text-[16px] leading-[24px] uppercase mt-8 text-center'>Available Soon On:</p>
                         <div className='flex gap-3 justify-center mt-4'>
-                            <button class="relative px-6 py-2.5 lg:px-8 lg:py-3.5 text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
-                                <span class="absolute inset-0 bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] opacity-75 blur-sm rounded-full"></span>
+                            <button className="relative px-6 py-2.5 lg:px-8 lg:py-3.5 text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
+                                <span className="absolute inset-0 bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] opacity-75 blur-sm rounded-full"></span>
                                 <img src={GoogleIcon} alt="" className='relative z-20 w-32' />
                             </button>
-                            <button class="relative px-6 py-2.5 lg:px-8 lg:py-3.5 text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
-                                <span class="absolute inset-0 bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] opacity-75 blur-sm rounded-full"></span>
+                            <button className="relative px-6 py-2.5 lg:px-8 lg:py-3.5 text-white font-bold rounded-full bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] hover:from-[#4F8DA1] hover:to-[#9AC7D5] transform hover:scale-105 transition-all duration-300">
+                                <span className="absolute inset-0 bg-gradient-to-r via-[#5BA4BB] from-[#9AC7D5] to-[#4F8DA1] opacity-75 blur-sm rounded-full"></span>
                                 <img src={AppleIcon} alt="" className='relative z-20 w-28' />
                             </button>
                         </div>
@@ -185,9 +187,9 @@ const HomePage = () => {
                                 <span className='text-[#A6A6A6] helvetica-bold'> Habits </span>
                             </p>
                             <div className='flex justify-center pt-10'>
-                                <button class="relative px-8 py-3 text-white font-bold rounded-full bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] hover:from-[#BF8D10] hover:to-[#EAC870] transform hover:scale-105 transition-all duration-300">
-                                    <span class="absolute inset-0 bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] opacity-75 blur-sm rounded-full"></span>
-                                    <span class="relative z-10">Join Waiting List</span>
+                                <button className="relative px-8 py-3 text-white font-bold rounded-full bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] hover:from-[#BF8D10] hover:to-[#EAC870] transform hover:scale-105 transition-all duration-300">
+                                    <span className="absolute inset-0 bg-gradient-to-r from-[#EAC870] via-[#DEA81E] to-[#BF8D10] opacity-75 blur-sm rounded-full"></span>
+                                    <span className="relative z-10">Join Waiting List</span>
                                 </button>
                             </div>
                         </div>
