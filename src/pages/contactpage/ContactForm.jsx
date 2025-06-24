@@ -1,7 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
-// import CursorIcon from "../../../assets/images/illutrations/icons/cursor.svg"
 
 export const ContactModal = ({ isOpen, setIsOpen }) => {
     const [success, setSuccess] = useState(false);
@@ -88,7 +87,7 @@ export const ContactModal = ({ isOpen, setIsOpen }) => {
                                 <h3 className="text-3xl md:text-5xl font-bold mb-2 awsome-bold">
                                     Join Waiting List
                                 </h3>
-                                <p>Be the first to try Piigy Points — Making Everyday Habits Fun for Kids.</p>
+                                <p>Be the first to try Piggy Points — Making Everyday Habits Fun for Kids.</p>
                                 <div className="mt-8">
                                     <form id="contact_form" className="space-y-4" onSubmit={sendMail}>
                                         <div className="space-y-2">
@@ -130,7 +129,7 @@ export const ContactModal = ({ isOpen, setIsOpen }) => {
                                         </div>
                                         {success && (
                                             <div className="mt-4 text-green-600 leading-none text-sm">
-                                                Form submitted successfully! <br /> Thanks for reaching out 🥳🥳! You’ll be the first to know when the app goes live!
+                                                Form submitted successfully! <br /> Thanks for reaching out 🥳🥳! You'll be the first to know when the app goes live!
                                             </div>
                                         )}
                                     </form>
